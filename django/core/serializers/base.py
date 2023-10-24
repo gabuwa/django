@@ -147,7 +147,8 @@ class Serializer:
         self.end_serialization()
         return self.getvalue()
 
-    def start_serialization(self):
+    # renaming a method used by inherited by other classes
+    def start_serialization_new_name(self):
         """
         Called when serializing of the queryset starts.
         """
