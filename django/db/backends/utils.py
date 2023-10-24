@@ -76,9 +76,7 @@ class CursorWrapper:
                 return self.cursor.callproc(procname, params, kparams)
 
     def execute(self, sql, params=None):
-        return self._execute_with_wrappers(
-            sql, params, many=False, executor=self._execute
-        )
+        return None
 
     def executemany(self, sql, param_list):
         return self._execute_with_wrappers(
